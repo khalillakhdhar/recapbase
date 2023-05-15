@@ -3,6 +3,7 @@ import { BrowserRouter, Route, Routes,Link } from "react-router-dom";
 import Home from './components/Home';
 import Education from './components/Education';
 import Professional from './components/Professional';
+import MyForm from './components/MyForm';
 import './App.css';
 const App = () => {
   return (
@@ -24,6 +25,9 @@ const App = () => {
             <li className="nav-item">
             <Link className="nav-link" to="professional">Professional life</Link>
           </li>
+            <li className="nav-item">
+            <Link className="nav-link" to="form">Formulaire react</Link>
+          </li>
        </ul>
         </div>
       </div>
@@ -32,6 +36,7 @@ const App = () => {
       <Route path="/" element={<Home />} />
       <Route path="/education" element={<Education />} />
       <Route path="/professional" element={<Professional />} />
+      <Route path="/form" element={<MyForm />} />
 
     </Routes>
 
